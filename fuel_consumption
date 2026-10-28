@@ -1,0 +1,19 @@
+fuel_consumption = {  # in litre/100km
+  'Citroen': {
+    'Berlingo': {
+      'petrol_engine': 8.25,
+      'diesel_engine': 5.75,
+    },
+    'C3': {
+      'petrol_engine': 7.0,
+      'diesel_engine': 5.0,
+    },
+  },
+}
+
+
+
+petrol_avg = ((fuel_consumption['Citroen']['Berlingo']['petrol_engine']) + (fuel_consumption['Citroen']['C3']['petrol_engine'])) / 2
+diesel_avg = ((fuel_consumption['Citroen']['Berlingo']['diesel_engine']) + (fuel_consumption['Citroen']['C3']['diesel_engine'])) / 2
+print("Petrol average: ", petrol_avg)
+print("Diesel average: ", diesel_avg)
